@@ -1,0 +1,169 @@
+{
+  "version": "0.0.1",
+  "suite-1": {
+    "blogs": [
+      {
+        "id": 1,
+        "author": {
+          "id": 1,
+          "firstName": "Sidonie",
+          "lastName": "Vandevelde",
+          "user": null,
+          "expertise": "Intern",
+          "introduction": "Intern",
+          "about": "Intern",
+          "locale": "en",
+          "created_at": "2021-05-25T12:07:00.675Z",
+          "updated_at": "2021-05-25T12:07:00.700Z",
+          "profileImg": {
+            "id": 16,
+            "name": "photo ID.jpg",
+            "alternativeText": "",
+            "caption": "",
+            "width": 1069,
+            "height": 1108,
+            "formats": {
+              "large": {
+                "ext": ".jpg",
+                "url": "/uploads/large_photo_ID_2c4f4e7cfb.jpg",
+                "hash": "large_photo_ID_2c4f4e7cfb",
+                "mime": "image/jpeg",
+                "name": "large_photo ID.jpg",
+                "path": null,
+                "size": 81.69,
+                "width": 965,
+                "height": 1000
+              },
+              "small": {
+                "ext": ".jpg",
+                "url": "/uploads/small_photo_ID_2c4f4e7cfb.jpg",
+                "hash": "small_photo_ID_2c4f4e7cfb",
+                "mime": "image/jpeg",
+                "name": "small_photo ID.jpg",
+                "path": null,
+                "size": 23.22,
+                "width": 482,
+                "height": 500
+              },
+              "medium": {
+                "ext": ".jpg",
+                "url": "/uploads/medium_photo_ID_2c4f4e7cfb.jpg",
+                "hash": "medium_photo_ID_2c4f4e7cfb",
+                "mime": "image/jpeg",
+                "name": "medium_photo ID.jpg",
+                "path": null,
+                "size": 49.72,
+                "width": 724,
+                "height": 750
+              },
+              "thumbnail": {
+                "ext": ".jpg",
+                "url": "/uploads/thumbnail_photo_ID_2c4f4e7cfb.jpg",
+                "hash": "thumbnail_photo_ID_2c4f4e7cfb",
+                "mime": "image/jpeg",
+                "name": "thumbnail_photo ID.jpg",
+                "path": null,
+                "size": 3.67,
+                "width": 151,
+                "height": 156
+              }
+            },
+            "hash": "photo_ID_2c4f4e7cfb",
+            "ext": ".jpg",
+            "mime": "image/jpeg",
+            "size": 98.1,
+            "url": "/uploads/photo_ID_2c4f4e7cfb.jpg",
+            "previewUrl": null,
+            "provider": "local",
+            "provider_metadata": null,
+            "created_at": "2021-05-25T12:06:36.045Z",
+            "updated_at": "2021-05-25T12:06:36.102Z"
+          }
+        },
+        "topic": "Highlighted",
+        "intro": "Avoir une alimentation saine et équilibrée est primordial pour avoir un rythme de vie, un corps et un esprit sain.",
+        "title": "Pourquoi est-il important de varier les couleurs dans l’assiette ?",
+        "content": "Avoir une alimentation saine et équilibrée est primordial pour avoir un rythme de vie, un corps et un esprit sain. Manger des fruits et légumes est indispensable pour une alimentation équilibrée, ce n’est plus un secret. Mais saviez-vous que la couleur de ceux-ci était importante ? En effet, elle ne fait pas qu’apporter un peu de gaieté dans l’assiette, mais elle est aussi synonyme de composés phytochimiques qui sont riches en molécules antioxydantes. En fonction de la couleur, les fruits et légumes apportent à l’organisme des molécules indispensables à une bonne santé.\n\n## Pourquoi la couleur est-elle importante ? \nLa couleur des fruits et légumes ne fait pas qu’apporter de la gaieté dans vos assiettes, elles sont aussi liées à une source d’apports nutritifs essentiels pour la santé. En effet, les fruits et légumes sont riches en fibres, minéraux, vitamines, et oligo-éléments. \n\nMais qu’est-ce que viennent faire les couleurs dans leurs apports ? Et bien, en fonction de chaque couleur, le fruit ou légume sera plus riche en molécules antioxydantes, qui les pigmentent naturellement. Ce sont des composés phytochimiques. Plus un aliment est coloré, plus il contient de composés phytochimiques. Cependant, certains aliments de couleur blanche-grise sont tout de même très bon pour la santé. Les couleurs sont un moyen ludique et efficace de varier votre alimentation en fruits et légumes. \n\n## Quelles sont ces couleurs ? \nIl y a 5 catégories de couleurs : rouge, vert, bleu-violet, jaune-orange et blanc-gris. \n\nPour le rouge, vous pouvez manger par exemple des fraises, des tomates, des poivrons, du raisin, des airelles, etc. Et ces aliments sont riches en lycopènes, anthocyanes, vitamines A et C. De plus, le lycopène résiste à la chaleur. Cuit, ses apports biologiques augmentent. \n\nLe lycopène améliore la digestion, diminue la sensibilité de la peau aux rayons ultraviolets, favorise l’action des autres antioxydants et réduit le risque de cancer de la prostate. Quant à l’anthocyane, il aide à améliorer la santé des vaisseaux sanguins.\n\n![Les fruits et légumes rouge.jpg](/uploads/Les_fruits_et_legumes_rouge_2b157cb88e.jpg)\n\nPour le jaune-orange, les abricots, la mangue, la pêche, le potiron, la carotte ou encore le melon sont riches en bêta-carotène, lutéines et lycopènes. \n\nLa bêta-carotène est un antioxydant qui peut être transformé en vitamine A par le corps humain. Il agit également dans la prévention cardiovasculaire et immunitaire. La lutéine, quant à elle, aide à protéger les yeux des maladies liées à l’âge. \n\n![Les fruits et légumes orange-jaune.jpg](/uploads/Les_fruits_et_legumes_orange_jaune_632200f4f5.jpg)\n\nPour le vert, les poireaux, les petits pois, le brocoli, le kiwi, les épinards, etc. sont riches en lutéine, zéaxanthine et bêta-carotène. \n\nLes caroténoïdes agissent sur la physiologie de l'œil, pour la vision nocturne mais aussi pour prévenir de la dégénérescence maculaire liée à l’âge. De plus, ils agissent sur l’état cardiovasculaire. \n\n![Les fruits et légumes verts.jpg](/uploads/Les_fruits_et_legumes_verts_5fcbf5190e.jpg)\n\nPour le bleu-violet, mangez des myrtilles, des aubergines, du raisin noir, des mûres, du cassis, etc. Ils sont riches en anthocyanes et resvératrol. \n\nLeurs vertus agissent sur les sphères cardiovasculaires, notamment la tension artérielle, mais aussi hépatique et cérébrale avec la mémoire. \n\n![Les fruits et légumes bleu-violet.jpg](/uploads/Les_fruits_et_legumes_bleu_violet_a469ea3c38.jpg)\n\nPour le blanc-gris, vous pouvez manger de l’ail, des champignons, des pommes de terre, du chison, de l’oignon, du chou-fleur, etc. Ils ont un apport en anthoxanthines.  \n\nMême si ces aliments ont une couleur blanche, ces fruits et légumes ont des apports antioxydants et anti-inflammatoires, notamment l’ail et l’oignon. Ces aliments sont riches en composés soufrés, ce qui est antibactérien et antifongique. Ils sont intéressants pour les maladies cardiovasculaires, les cancers mais aussi pour le système immunitaire. De plus, ils aident à réduire le taux de mauvais cholestérol. \n\n![Les fruits et légumes blancs-gris.jpg](/uploads/Les_fruits_et_legumes_blancs_gris_5904d84955.jpg)\n\nComme chaque couleur est liée à des bienfaits spécifiques, il est essentiel de varier les repas. Nous vous conseillons de varier ces sources de nutriments tous les jours. Pourquoi ne pas ajouter des fraises et des mûres au petit déjeuner. Ensuite manger des carottes et tomates à midi. Des graines et un kiwi pour goûter et enfin un légume comme le chou-fleur en salade froide le soir. Grâce à cela, vous apportez au corps les nutriments dont il a besoin pour être en bonne santé. \n",
+        "locale": "en",
+        "published_at": "2021-05-25T14:19:21.865Z",
+        "created_at": "2021-05-25T12:46:56.353Z",
+        "updated_at": "2021-05-25T14:19:21.914Z",
+        "tags": {
+          "id": 85,
+          "value": "food"
+        },
+        "coverImg": {
+          "id": 30,
+          "name": "couleurs dans l'assiette 2.jpg",
+          "alternativeText": "",
+          "caption": "",
+          "width": 5184,
+          "height": 3456,
+          "formats": {
+            "large": {
+              "ext": ".jpg",
+              "url": "/uploads/large_couleurs_dans_l_assiette_2_b30a053e79.jpg",
+              "hash": "large_couleurs_dans_l_assiette_2_b30a053e79",
+              "mime": "image/jpeg",
+              "name": "large_couleurs dans l'assiette 2.jpg",
+              "path": null,
+              "size": 136.79,
+              "width": 1000,
+              "height": 667
+            },
+            "small": {
+              "ext": ".jpg",
+              "url": "/uploads/small_couleurs_dans_l_assiette_2_b30a053e79.jpg",
+              "hash": "small_couleurs_dans_l_assiette_2_b30a053e79",
+              "mime": "image/jpeg",
+              "name": "small_couleurs dans l'assiette 2.jpg",
+              "path": null,
+              "size": 42.98,
+              "width": 500,
+              "height": 333
+            },
+            "medium": {
+              "ext": ".jpg",
+              "url": "/uploads/medium_couleurs_dans_l_assiette_2_b30a053e79.jpg",
+              "hash": "medium_couleurs_dans_l_assiette_2_b30a053e79",
+              "mime": "image/jpeg",
+              "name": "medium_couleurs dans l'assiette 2.jpg",
+              "path": null,
+              "size": 86.47,
+              "width": 750,
+              "height": 500
+            },
+            "thumbnail": {
+              "ext": ".jpg",
+              "url": "/uploads/thumbnail_couleurs_dans_l_assiette_2_b30a053e79.jpg",
+              "hash": "thumbnail_couleurs_dans_l_assiette_2_b30a053e79",
+              "mime": "image/jpeg",
+              "name": "thumbnail_couleurs dans l'assiette 2.jpg",
+              "path": null,
+              "size": 11.93,
+              "width": 234,
+              "height": 156
+            }
+          },
+          "hash": "couleurs_dans_l_assiette_2_b30a053e79",
+          "ext": ".jpg",
+          "mime": "image/jpeg",
+          "size": 1323.85,
+          "url": "/uploads/couleurs_dans_l_assiette_2_b30a053e79.jpg",
+          "previewUrl": null,
+          "provider": "local",
+          "provider_metadata": null,
+          "created_at": "2021-05-25T13:28:42.263Z",
+          "updated_at": "2021-05-25T13:28:42.277Z"
+        },
+        "localizations": [
+          {
+            "id": 2,
+            "locale": "fr",
+            "published_at": "2021-05-25T14:19:25.824Z"
+          }
+        ]
+      }
+    ]
+  }
+}

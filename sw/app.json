@@ -1,0 +1,24 @@
+{
+  "version": "local-0.1",
+  "environment": "develop",
+  "apiHost": "https://www.staging-5em2ouy-aw5vt2llgxeou.eu-5.platformsh.site",
+  "mode": "pwa",
+  "supportedLanguages": {
+    "EN": "English",
+    "FR": "Français"
+  },
+  "defaultLanguage": "EN",
+  "firebase": {
+    "apiKey": "AIzaSyBDn7UcndCKSqtEx9p9XtQtYgoREvJIDkA",
+    "authDomain": "zendare-staging.firebaseapp.com",
+    "databaseURL": "https://zendare-staging.firebaseio.com",
+    "projectId": "zendare-staging",
+    "storageBucket": "zendare-staging.appspot.com",
+    "messagingSenderId": "827657399129",
+    "appId": "1:827657399129:web:191c72dacd92dd297b7a48",
+    "measurementId": "G-SW0GY2YNKW"
+  },
+  "sentry": {
+    "dsn": "https://7015c3c6c40e475785437ffe6bd1d938@o471806.ingest.sentry.io/5504311"
+  }
+}

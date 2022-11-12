@@ -1,0 +1,315 @@
+:host {
+
+  /* Component styles go here */
+
+  .hero-background {
+    background-color: var(--zen-color-primary-light);
+
+    .hero-left {
+      height: 100%;
+      @include flexbox();
+      align-items: flex-end;
+      opacity: 0.9;
+
+      .hero-star-left {
+        overflow: hidden;
+        margin-bottom: 12rem;
+        margin-left: -1.2rem;
+
+        .img-star-left {
+          width: 5rem;
+        }
+      }
+    }
+
+    .hero-right {
+      height: 100%;
+      @include flexbox();
+      align-items: flex-start;
+      justify-content: flex-end;
+      opacity: 0.9;
+
+      .hero-star-right {
+        margin: 0 -2rem 0 0;
+        overflow: hidden;
+
+        .img-star-right {
+          width: 8rem;
+        }
+      }
+    }
+
+    /* Desktop */
+    @include desktop {
+      .hero-left {
+        justify-content: flex-end;
+
+        .hero-star-left {
+          overflow: hidden;
+          margin-bottom: 2rem;
+
+          .img-star-left {
+            width: 10rem;
+          }
+        }
+      }
+
+      .hero-right {
+        justify-content: flex-start;
+
+        .hero-star-right {
+          padding: 4rem 0 0;
+          margin: 0 -1.5rem 0 0;
+          overflow: hidden;
+
+          .img-star-right {
+            width: 7rem;
+          }
+        }
+      }
+    }
+
+    /* Laptop */
+    @include alt-laptop {
+      .hero-left {
+        justify-content: flex-start;
+
+        .hero-star-left {
+          overflow: hidden;
+          margin-bottom: 7rem;
+
+          .img-star-left {
+            width: 6rem;
+          }
+        }
+      }
+
+      .hero-right {
+        justify-content: flex-end;
+
+        .hero-star-right {
+          padding: 4rem 0 0;
+          margin: 0 -1.5rem 0 0;
+          overflow: hidden;
+
+          .img-star-right {
+            width: 9rem;
+          }
+        }
+      }
+    }
+
+    /* Tablet */
+    @include alt-tablet {
+      .hero-left {
+        justify-content: flex-start;
+
+        .hero-star-left {
+          overflow: hidden;
+          margin-bottom: 2rem;
+
+          .img-star-left {
+            width: 10rem;
+          }
+        }
+      }
+
+      .hero-right {
+        justify-content: flex-end;
+
+        .hero-star-right {
+          padding: 4rem 0 0;
+          margin: 0 -1.5rem 0 0;
+          overflow: hidden;
+
+          .img-star-right {
+            width: 7rem;
+          }
+        }
+      }
+    }
+
+    .hero-container {
+      @include flexbox(column);
+      justify-content: space-between;
+      overflow: hidden;
+
+      .hero-group-title {
+        @include flexbox(column);
+        align-items: center;
+        margin: 52px 0 40px;
+
+        .hero-title {
+          margin: 0 0 12px;
+          font-size: 40px;
+          line-height: 59px;
+          font-weight: 700;
+          text-align: center;
+          color: var(--ion-color-secondary);
+
+        }
+
+        .hero-subtitle {
+          max-width: 340px;
+          font-size: 21px;
+          font-weight: 400;
+          line-height: 32px;
+          margin: 0;
+          text-align: center;
+          color: var(--ion-color-secondary-shade);
+
+        }
+      }
+
+      .hero-group-buttons {
+        @include flexbox(column);
+        align-items: center;
+        margin: 0 0 40px;
+
+        ion-button {
+          font-family: var(--ion-font-family);
+          width: 240px;
+          height: 56px;
+          font-size: 16px;
+          font-weight: 600;
+          --border-radius: 8px;
+        }
+
+        ion-button.hero-start-btn {
+          order: 1;
+          text-transform: capitalize;
+          --background: var(--ion-color-primary);
+          --background-activated: var(--ion-color-primary);
+          --background-activated-opacity: 0.1;
+          --border-color: none;
+          --border-style: none;
+          --border-width: none;
+          --box-shadow: 0 2px 0 0 var(--ion-color-light);
+          --color: var(--ion-color-primary-contrast);
+          --color-activated: var(--ion-color-primary-contrast);
+          --opacity: 1;
+          --padding-bottom: 0;
+          --padding-end: 0;
+          --padding-start: 0;
+          --padding-top: 0;
+          --ripple-color: var(--ion-color-primary-contrast);
+          --transition: ease-in-out 0.2s;
+        }
+      }
+
+      /* Desktop */
+      @include desktop {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr auto;
+
+        .hero-group-title {
+          grid-column: 1 / span 1;
+          grid-row: 1 / span 1;
+          align-items: start;
+          margin: 92px 0 4rem;
+
+          .hero-title {
+            font-size: 52px;
+            line-height: 78px;
+            margin: 0 0 1rem;
+            text-align: left;
+
+          }
+
+          .hero-subtitle {
+            line-height: 38px;
+            max-width: 90%;
+            font-size: 24px;
+            font-weight: 400;
+            text-align: left;
+          }
+        }
+
+        .hero-group-buttons {
+          @include flexbox();
+          grid-column: 1 / span 1;
+          grid-row: 2 / span 1;
+          align-self: flex-end;
+          margin-bottom: 140px;
+
+          ion-button {
+            width: 180px;
+            padding-right: 1.5rem;
+          }
+
+          ion-button.hero-more-btn {
+            margin-top: 4px;
+          }
+        }
+
+        .hero-smartphone {
+          grid-column: 2 / span 1;
+          grid-row: 1 / span 2;
+          width: 100%;
+          align-self: flex-end;
+        }
+      }
+
+      /* Laptop */
+      @include alt-laptop {
+        margin: auto;
+        padding: 0 40px;
+
+        .hero-group-title {
+          align-items: flex-start;
+          grid-column: 1 / span 2;
+          margin-top: 64px;
+
+          .hero-title {
+            font-size: 50px;
+            max-width: 600px;
+            margin-bottom: 24px;
+          }
+
+          .hero-subtitle {
+            font-size: 24px;
+            max-width: 500px;
+          }
+        }
+
+        .hero-group-buttons {
+          margin-bottom: 64px;
+        }
+
+        .hero-smartphone {
+          width: 100%;
+          align-self: flex-end;
+        }
+      }
+
+      /* Tablet */
+      @include alt-tablet {
+        min-height: 540px;
+        align-items: center;
+
+        .hero-group-title {
+          margin-bottom: 52px;
+
+          .hero-title {
+            margin: 0 0 1.5rem;
+            font-size: 50px;
+            max-width: 630px;
+          }
+
+          .hero-subtitle {
+            padding: 0 40px;
+            font-size: 26px;
+            max-width: 500px;
+            line-height: 40px;
+
+          }
+        }
+
+        .hero-group-buttons {
+          margin: 0 0 64px;
+        }
+      }
+    }
+  }
+}

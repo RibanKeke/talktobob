@@ -1,0 +1,205 @@
+:host {
+
+  .header-container.donationColor {
+    background-color: #f2bcd5 ;
+  } 
+
+  .header-container {
+    min-height: 80px;
+    width: 100%;
+
+    .header-content {
+      height: 80px;
+      @include flexbox();
+      justify-content: space-between;
+      align-items: center;
+
+      .logo-container {
+        @include flexbox();
+
+        .logo {
+          width: 92px;
+          min-width: 92px;
+
+          /* Desktop */
+          @include desktop {
+            width: 108px;
+            min-width: 108px;
+          }
+
+          /* Laptop */
+          @include alt-laptop {
+            width: 108px;
+            min-width: 108px;
+          }
+
+          /* Tablet */
+          @include alt-tablet {
+            width: 92px;
+            min-width: 92px;
+          }
+        }
+
+        .beta-sign {
+          font-size: 12px;
+          color: var(--ion-color-medium);
+          border: solid 1px var(--ion-color-medium);
+          width: 32px;
+          height: 16px;
+          text-align: center;
+          border-radius: 3px;
+          margin-left: 6px;
+          padding: 1px 0 1px;
+
+          /* Desktop */
+          @include desktop {
+            padding: 1px 0 0;
+          }
+        }
+      }
+
+      .menu-button {
+        color: var(--ion-color-secondary);
+        font-size: 28px;
+      }
+
+      .desktop-menu {
+        @include flexbox();
+        align-items: center;
+
+        ion-router-link.nav-btn {
+          font-size: 13px;
+          --color: var(--ion-color-secondary);
+          font-weight: 700;
+          text-transform: uppercase;
+          margin: 0 16px;
+          transition: ease-in 0.25s;
+        }
+
+        ion-router-link.nav-btn.donation {
+          cursor: pointer;
+          padding: 12px;
+          border-radius: 2rem;
+          border: solid 1px var(--ion-color-secondary);
+        }
+
+        ion-router-link.nav-btn:hover {
+          opacity: 0.54;
+        }
+
+        .seperator {
+          margin: 0 16px 0 16px;
+          height: 12px;
+          width: 1px;
+          border-radius: 2rem;
+          background-color: var(--ion-color-light);
+        }
+
+        .btn-container {
+          button.lang-btn {
+            font-family: var(--ion-font-family);
+            margin: 0 8px;
+            font-size: 13px;
+            font-weight: 400;
+            color: var(--ion-color-medium-tint);
+            cursor: pointer;
+            outline: none;
+            padding: 0;
+            background-color: transparent;
+            transition: ease-in 0.25s;
+            border-color: transparent;
+          }
+
+          button.lang-btn.selected {
+            color: var(--ion-color-secondary);
+            font-size: 14px;
+            font-weight: 600;
+
+          }
+
+
+
+          .tooltip {
+            position: relative;
+            display: inline-block;
+            opacity: 0.54;
+            z-index: 9999;
+          }
+
+          .tooltip .tooltiptext {
+            visibility: hidden;
+            width: 120px;
+            background-color: black;
+            color: #fff;
+            text-align: center;
+            border-radius: 6px;
+            padding: 5px 0;
+            position: absolute;
+            z-index: 9999;
+            top: 150%;
+            left: 50%;
+            margin-left: -60px;
+          }
+
+          .tooltip .tooltiptext::after {
+            content: "";
+            position: absolute;
+            bottom: 100%;
+            left: 50%;
+            margin-left: -5px;
+            border-width: 5px;
+            border-style: solid;
+            border-color: transparent transparent black transparent;
+          }
+
+          .tooltip:hover .tooltiptext {
+            visibility: visible;
+          }
+        }
+      }
+    }
+
+    /* Desktop */
+    @include desktop {
+      --min-height: 80px;
+
+      .header-content {
+        .logo-container {
+          .logo {
+            height: 30px;
+          }
+
+          .beta-sign {
+            font-size: 13px;
+            width: 36px;
+            height: 18px;
+          }
+        }
+      }
+    }
+
+    /* Tablet */
+    @include alt-tablet {
+      --min-height: 80px;
+
+      .header-content {
+        .logo-container {
+          .logo {
+            height: 30px;
+          }
+
+          .beta-sign {
+            font-size: 13px;
+            width: 36px;
+            height: 18px;
+          }
+        }
+      }
+    }
+  }
+
+  ion-toolbar.white {
+    --background: #ffffff;
+    border-bottom: solid 3px var(--ion-color-light-tint);
+  }
+}

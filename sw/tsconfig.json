@@ -1,0 +1,20 @@
+{
+  "compilerOptions": {
+    "target": "es2017",
+    "module": "esNext",
+    "resolveJsonModule": true,
+    "esModuleInterop": true ,
+    "forceConsistentCasingInFileNames": true,
+    "moduleResolution": "node",
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "outDir": "./dist",
+    "lib": [
+      "esNext",
+      "WebWorker"
+    ],
+  },
+  "exclude": [
+    "node_modules"
+  ]
+}

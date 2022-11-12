@@ -1,0 +1,32 @@
+:host {
+
+  /* Component styles go here */
+  .main-container {
+    height: 100vh;
+    background-color: var(--ion-color-primary);
+    @include flexbox(column);
+
+    .img-container {
+      height: 100%;
+      @include flexbox();
+      align-self: center;
+
+      .splash-logo {
+        width: 100%;
+        height: auto;
+      }
+    }
+
+    .subtitle-container {
+      @include flexbox();
+      justify-content: center;
+      width: 100%;
+      margin-bottom: 16px;
+
+      .mayflyapp-logo {
+        width: 50%;
+        height: auto;
+      }
+    }
+  }
+}

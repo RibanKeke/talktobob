@@ -1,0 +1,65 @@
+{
+  "root":"app-page-home",
+  "menu": {
+    "restriction": "completedProfile",
+    "url": "/",
+    "type":"menu",
+    "subRoutes": {
+      "home": {
+        "component": "site-page-home",
+        "icon": "home-outline",
+        "url":"/"
+      },
+      "blogs": {
+        "component": "site-page-blog",
+        "icon": "calendar-outline",
+        "url":"/blogs"
+      },
+      "donation": {
+        "component": "site-page-donation",
+        "icon": "person-circle-outline",
+        "url":"/donation"
+      }
+    },
+    "labels": {
+      "EN": {
+        "home": "Home",
+        "blogs": "Blog",
+        "donation": "Support us"
+      },
+      "FR": {
+        "home": "Accueil",
+        "blogs": "Blog",
+        "donation": "Soutenez-nous"
+      },
+      "NL": {
+        "home": "Home",
+        "blogs": "Blog",
+        "donation": "Support us"
+      },
+      "ES": {
+        "home": "Home",
+        "blogs": "Blog",
+        "donation": "Support us"
+      }
+    }
+  },
+  "routes": {
+    "blogs": {
+      "url": "/blogs",
+      "param": "blogId",
+      "detail_component": "site-blog-detail"
+    },
+    "terms": {
+      "url": "/terms",
+      "component": "site-page-terms"
+    },
+    "policy": {
+      "url": "/policy",
+      "component": "site-page-policy"
+    }
+  },
+  "routeGuards": {
+  },
+  "redirects":[]
+}

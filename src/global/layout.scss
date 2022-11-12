@@ -1,0 +1,71 @@
+/** Optional CSS utils that can be commented out
+DOC: https://ionicframework.com/docs/layout/css-utilities */
+@import "~@ionic/core/css/display.css";
+
+/* BREAKPOINTS */
+$xs-width: 0px;
+$sm-phone: 320px;
+$sm-width: 576px; /* Below this screen width we consider the device to be mobile --> Tablet from here */
+$md-width: 768px; /* Tablet */
+$lg-width: 992px; /* Laptop */
+$xl-width: 1200px; /* Big screen devices */
+
+/*-- START - MOBILE -- */
+@mixin alt-xs {
+  @media (max-width: #{$sm-phone}) {
+    @content;
+  }
+}
+
+@mixin alt-tablet {
+  @media (min-width: #{$sm-width + 1px}) and (max-width: #{$lg-width}) {
+    @content;
+  }
+}
+
+/*-- START - DESKTOP -- */
+@mixin desktop {
+  @media (min-width: #{$lg-width +1px}) {
+    @content;
+  }
+}
+
+@mixin alt-laptop {
+  @media (min-width: #{$lg-width + 1px}) and (max-width: #{$xl-width}) {
+    @content;
+  }
+}
+
+@mixin alt-xl {
+  @media (min-width: #{$xl-width + 1px}) {
+    @content;
+  }
+}
+/*-- END - DESKTOP -- */
+
+/* LAYOUT MIX-INS */
+/* ------------- */
+@mixin flexbox($direction: row) {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: $direction;
+}
+
+@mixin flex($values) {
+  -webkit-box-flex: $values;
+  -moz-box-flex: $values;
+  -webkit-flex: $values;
+  -ms-flex: $values;
+  flex: $values;
+}
+
+@mixin order($val) {
+  -webkit-box-ordinal-group: $val;
+  -moz-box-ordinal-group: $val;
+  -ms-flex-order: $val;
+  -webkit-order: $val;
+  order: $val;
+}

@@ -1,0 +1,85 @@
+:host {
+
+  /* Component styles go here */
+  .main-container {
+    @include flexbox(column);
+    align-items: flex-start;
+    padding: 0 0 40px;
+
+    /* Desktop */
+    @include desktop() {
+      padding: 0 0 24px;
+    }
+
+    /* Laptop */
+    @include alt-laptop() {
+      padding: 0 0 24px;
+    }
+
+    /* iPad */
+    @include alt-tablet() {
+      padding: 64px 0 24px;
+    }
+
+    h2.categories-title {
+      font-size: 18px;
+      font-weight: 600;
+      color: var(--ion-color-secondary-shade);
+      margin: 0 0 12px;
+    }
+
+    .btn-category {
+      --padding-start: 0;
+      font-size: 16px;
+      font-weight: 700;
+      text-transform: uppercase;
+      --color: var(--ion-color-secondary);
+      --background: transparent;
+      --background-hover: none;
+      --box-shadow: none;
+      --ripple-color: transparent;
+      --transition: 0.2s;
+      height: 32px;
+    }
+
+    ion-button.btn-category.selected-all {
+      --color: var(--ion-color-primary);
+      font-weight: 900;
+    }
+
+    ion-button.btn-category.selected-food {
+      --color: var(--zen-color-food);
+      font-weight: 900;
+    }
+
+    ion-button.btn-category.selected-nature {
+      --color: var(--zen-color-nature);
+      font-weight: 900;
+    }
+
+    ion-button.btn-category.selected-move {
+      --color: var(--zen-color-move);
+      font-weight: 900;
+    }
+
+    ion-button.btn-category.selected-enjoy {
+      --color: var(--zen-color-enjoy);
+      font-weight: 900;
+    }
+
+    ion-button.btn-category.selected-lifestyle {
+      --color: var(--zen-color-lifestyle);
+      font-weight: 900;
+    }
+
+    ion-button.btn-category.selected-purpose {
+      --color: var(--zen-color-purpose);
+      font-weight: 900;
+    }
+
+    ion-button.btn-category.selected-stepback {
+      --color: var(--zen-color-stepback);
+      font-weight: 900;
+    }
+  }
+}

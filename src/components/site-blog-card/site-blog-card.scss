@@ -1,0 +1,358 @@
+:host {
+  /* Component styles go here */
+
+  /* 
+  Large Card CSS
+  */
+
+  .card-container.large-card {
+    margin: 0 0 24px;
+    box-shadow: none;
+    padding: 8px;
+    border-radius: 12px;
+    --ripple-color: var(--ion-color-light-tint);
+
+    /* Desktop */
+    @include desktop() {
+      margin: 0 0 48px;
+    }
+
+    /* Laptop */
+    @include alt-laptop() {
+      margin: 0 0 48px;
+    }
+
+    /* iPad */
+    @include alt-tablet() {
+      margin: 0 0 48px;
+    }
+
+    .content-container {
+      padding: 0;
+
+      .main-container {
+
+        .img-container {
+          @include flexbox();
+          justify-content: center;
+          align-items: center;
+          height: 257px;
+          width: 100%;
+          overflow: hidden;
+          border-radius: 3px;
+
+          /* Desktop */
+          @include desktop() {
+            height: 400px;
+          }
+
+          /* Laptop */
+          @include alt-laptop() {
+            height: 400px;
+          }
+
+          /* iPad */
+          @include alt-tablet() {
+            height: 400px;
+          }
+
+          img.article-img {
+            border-radius: 3px;
+            height: auto;
+            width: 100%;
+          }
+        }
+
+        .card-content-container {
+
+          /* Desktop */
+          @include desktop() {
+            margin-top: 16px;
+          }
+
+          /* Laptop */
+          @include alt-laptop() {
+            margin-top: 16px;
+          }
+
+          /* iPad */
+          @include alt-tablet() {
+            margin-top: 12px;
+          }
+
+          .text-container {
+
+            p.card-date {
+              text-transform: uppercase;
+              font-size: 14px;
+              font-weight: 700;
+              margin: 0;
+              color: var(--ion-color-light);
+
+              /* Desktop */
+              @include desktop() {
+                font-size: 15px;
+              }
+
+              /* Laptop */
+              @include alt-laptop() {
+                font-size: 15px;
+              }
+
+              /* iPad */
+              @include alt-tablet() {
+                font-size: 14px;
+              }
+            }
+
+            h1.card-title {
+              font-size: 24px;
+              font-weight: 700;
+              margin: 6px 0 -3px;
+              line-height: 28px;
+              color: var(--ion-color-secondary);
+
+              /* Desktop */
+              @include desktop() {
+                margin: 12px 0 -4px;
+                font-size: 34px;
+                line-height: 40px;
+              }
+
+              /* Laptop */
+              @include alt-laptop() {
+                margin: 12px 0 -4px;
+                font-size: 36px;
+              }
+
+              /* iPad */
+              @include alt-tablet() {
+                font-size: 36px;
+                margin: 12px 0 -4px;
+
+              }
+            }
+
+            .article-text {
+              font-size: 16px;
+              font-weight: 400;
+              margin: 12px 0 12px;
+              line-height: 26px;
+              color: var(--ion-color-medium);
+              display: -webkit-box;
+              -webkit-line-clamp: 3;
+              -webkit-box-orient: vertical;
+              overflow: hidden;
+
+              /* Desktop */
+              @include desktop() {
+                font-size: 20px;
+              }
+
+              /* Laptop */
+              @include alt-laptop() {
+                font-size: 21px;
+              }
+
+              /* iPad */
+              @include alt-tablet() {
+                font-size: 20px;
+              }
+            }
+          }
+
+          app-tag {
+            padding-right: 10px;
+          }
+        }
+      }
+    }
+  }
+
+
+  /* 
+  Small Card CSS
+  */
+
+  .card-container.small-card {
+    margin: 0 0 32px;
+    box-shadow: none;
+    padding: 0;
+    border-radius: 12px;
+    --ripple-color: var(--ion-color-light-tint);
+
+    /* Desktop */
+    @include desktop() {
+      margin: 0 0 24px;
+      padding: 12px;
+    }
+
+    /* Laptop */
+    @include alt-laptop() {
+      margin: 0 0 24px;
+      padding: 12px;
+    }
+
+    /* iPad */
+    @include alt-tablet() {
+      margin: 0 0 24px;
+      padding: 12px;
+    }
+
+    .content-container {
+      padding: 0;
+
+      .main-container {
+        @include flexbox();
+        align-items: flex-start;
+
+        .img-container {
+          @include flexbox();
+          justify-content: center;
+          align-items: center;
+          min-height: 120px;
+          min-width: 120px;
+          max-width: 210px;
+          overflow: hidden;
+          border-radius: 2px;
+
+          /* Desktop */
+          @include desktop() {
+            min-height: 160px;
+            min-width: 210px;
+          }
+
+          /* Laptop */
+          @include alt-laptop() {
+            min-height: 160px;
+            min-width: 210px;
+          }
+
+          /* iPad */
+          @include alt-tablet() {
+            min-height: 160px;
+            min-width: 210px;
+          }
+
+          img.article-img {
+            width: 100%;
+            border-radius: 2px;
+          }
+        }
+
+        .card-content-container {
+          height: 120px;
+          padding-left: 12px;
+          @include flexbox(column);
+          justify-content: space-between;
+
+          /* Desktop */
+          @include desktop() {
+            height: 160px;
+            padding-left: 20px;
+          }
+
+          /* Laptop */
+          @include alt-laptop() {
+            height: 160px;
+            padding-left: 20px;
+          }
+
+          /* iPad */
+          @include alt-tablet() {
+            height: 160px;
+            padding-left: 20px;
+          }
+
+          p.card-date {
+            text-transform: uppercase;
+            font-size: 12px;
+            font-weight: 700;
+            margin: 0;
+            color: var(--ion-color-light);
+
+            /* Desktop */
+            @include desktop() {
+              font-size: 14px;
+            }
+
+            /* Laptop */
+            @include alt-laptop() {
+              font-size: 14px;
+            }
+
+            /* iPad */
+            @include alt-tablet() {
+              font-size: 14px;
+            }
+          }
+
+          h1.card-title {
+            font-size: 18px;
+            font-weight: 700;
+            margin: 0 0 -8px;
+            color: var(--ion-color-secondary);
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+
+            /* Desktop */
+            @include desktop() {
+              margin: 4px 0 -4px;
+              font-size: 22px;
+              line-height: 28px;
+            }
+
+            /* Laptop */
+            @include alt-laptop() {
+              margin: 4px 0 -4px;
+              font-size: 22px;
+            }
+
+            /* iPad */
+            @include alt-tablet() {
+              margin: 0 0 -4px;
+              font-size: 22px;
+            }
+          }
+
+          p.article-text {
+            font-size: 16px;
+            font-weight: 400;
+            margin: 8px 0 0;
+            color: var(--ion-color-medium);
+            display: -webkit-box;
+            -webkit-line-clamp: 1;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+
+            /* Desktop */
+            @include desktop() {
+              font-size: 17px;
+              -webkit-line-clamp: 2;
+            }
+
+            /* Laptop */
+            @include alt-laptop() {
+              margin: 12px 0 8px;
+              font-size: 17px;
+              -webkit-line-clamp: 2;
+            }
+
+            /* iPad */
+            @include alt-tablet() {
+              font-size: 16px;
+              margin: 12px 0 8px;
+              -webkit-line-clamp: 2;
+            }
+          }
+
+          app-tag {
+            padding-right: 10px;
+          }
+        }
+      }
+    }
+  }
+}

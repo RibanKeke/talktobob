@@ -1,0 +1,5 @@
+# robots.txt for http://zendare.app
+
+User-agent: *
+disallow: /manager*
+sitemap: https://zendare.app/sitemap.xml 

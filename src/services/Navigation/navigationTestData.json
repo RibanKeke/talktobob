@@ -1,0 +1,49 @@
+{
+  "root":"app-page-home",
+  "menu": {
+    "url": "/",
+    "restriction": "completed",
+    "type": "tabs",
+    "subRoutes": {
+      "home": {
+        "component": "app-page-home",
+        "icon": "home",
+        "url": "/"
+      }
+    },
+    "labels": {
+      "EN": {
+        "home": "home",
+        "calendar": "calendar"
+      }
+    }
+  },
+  "routes": {
+    "actions": {
+      "url": "/actions",
+      "param": "actionId",
+      "detail_component": "app-action-detail"
+    },
+    "quizzes": {
+      "url": "/quizzes",
+      "param": "quizzId",
+      "detail_component": "app-quizz-detail"
+    },
+    "onboarding": {
+      "url": "/onboarding",
+      "restriction": "loggedOut",
+      "component": "app-page-onboarding"
+    },
+    "chapters": {
+      "url": "/chapters",
+      "detail_component": "app-chapter-detail",
+      "param": "chapterId",
+      "restriction": "completed"
+    }
+  },
+  "routeGuards": {
+    "loggedOut": [{ "from": "/home", "to": "/onboarding" }],
+    "completed": [{ "from": "/welcome", "to": "/home" }]
+  },
+  "redirects": [{ "url": "/", "targetUrl": "/onboarding" }]
+}

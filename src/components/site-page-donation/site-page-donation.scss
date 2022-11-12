@@ -1,0 +1,204 @@
+site-page-donation {
+  /* Component styles go here */
+
+  site-cookie-footer {
+    z-index: 99999;
+  }
+
+  ion-content {
+    .main-container {
+
+      .banner-background {
+        min-height: 286px;
+        padding: 0;
+        background-image: linear-gradient(to top, #fadfec, #f2bcd5);
+
+        /* Desktop */
+        @include desktop() {
+          padding: 0 130px 0 130px;
+          min-height: 400px;
+        }
+
+        /* Laptop */
+        @include alt-laptop() {
+          padding: 0 56px 0 56px;
+        }
+
+        .banner-content-container {
+          min-height: 286px;
+          @include flexbox(column);
+          align-items: center;
+
+          /* Desktop */
+          @include desktop() {
+            min-height: 400px;
+            @include flexbox();
+            justify-content: space-between;
+            align-items: center;
+          }
+
+          .title-container {
+            margin: 64px 0 0;
+
+            /* Desktop */
+            @include desktop() {
+              margin: 0;
+            }
+
+            /* Laptop */
+            @include alt-laptop() {
+              margin: 0;
+            }
+
+            h2.subtitle {
+              max-width: 240px;
+              height: 41px;
+              margin: 0;
+              font-size: 24px;
+              font-weight: 600;
+              color: var(--ion-color-secondary-shade);
+
+              /* Desktop */
+              @include desktop() {
+                font-size: 28px;
+              }
+
+              /* Laptop */
+              @include alt-laptop() {
+                font-size: 28px;
+              }
+
+              /* iPad */
+              @include alt-tablet() {
+                font-size: 24px;
+              }
+            }
+
+            h1.title {
+              font-size: 40px;
+              font-weight: 700;
+              margin: 0;
+              color: var(--ion-color-secondary);
+              font-weight: 700;
+              line-height: 56px;
+
+
+              /* Desktop */
+              @include desktop() {
+                line-height: 80px;
+                width: 500px;
+                height: 164px;
+                font-size: 56px;
+              }
+
+              /* Laptop */
+              @include alt-laptop() {
+                font-size: 56px;
+                width: 420px;
+                margin: 0 0 120px;
+                line-height: 80px;
+              }
+
+              /* iPad */
+              @include alt-tablet() {
+                line-height: 64px;
+                font-size: 50px;
+                max-width: 70%;
+                margin: 0 0 64px;
+              }
+            }
+          }
+
+          .img-container {
+            margin-top: 24px;
+            width: 100%;
+            @include flexbox();
+            align-items: flex-end;
+
+            /* Desktop */
+            @include desktop() {
+              width: 542px;
+              max-width: 542px;
+            }
+
+            /* iPad */
+            @include alt-tablet() {
+              justify-content: center;
+            }
+
+            /* Laptop */
+            @include alt-laptop() {
+              margin: 0;
+              min-height: 452px;
+              align-items: flex-end;
+            }
+
+            .banner-img {
+              width: 100%;
+
+              /* iPad */
+              @include alt-tablet() {
+                width: 70%;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .content-container {
+      @include flexbox(column);
+      align-items: center;
+      text-align: center;
+      padding: 64px 16px 128px;
+
+      /* Desktop */
+      @include desktop() {
+        padding: 100px 16px 128px;
+      }
+
+      h3.team-message {
+        margin: 0 0 12px;
+        font-size: 18px;
+        font-weight: 900;
+        text-transform: uppercase;
+        line-height: 32px;
+        color: var(--ion-color-primary);
+        opacity: 0.74;
+      }
+
+      p.intro-text {
+        margin: 0 0 64px;
+        font-size: 20px;
+        font-weight: 400;
+        line-height: 32px;
+        color: var(--ion-color-medium-shade);
+
+        /* Desktop */
+        @include desktop() {
+          padding: 0 200px 0 200px;
+        }
+      }
+
+      h4.intro-title {
+        margin: 0 0 24px;
+        font-size: 20px;
+        font-weight: 700;
+        line-height: 28px;
+        color: var(--ion-color-secondary);
+
+        /* Desktop */
+        @include desktop() {
+          padding: 0 200px 0 200px;
+        }
+      }
+
+      .btn-container {
+        ion-button.donate-btn {
+          height: 56px;
+          width: 180px;
+        }
+      }
+    }
+  }
+}

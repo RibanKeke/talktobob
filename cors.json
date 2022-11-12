@@ -1,0 +1,13 @@
+[
+  {
+    "origin": [
+      "*",
+      "localhost",
+      "zendare.app",
+      "dev.zendare.app",
+      "staging.zendare.app"
+    ],
+    "method": ["GET"],
+    "maxAgeSeconds": 3600
+  }
+]

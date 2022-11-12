@@ -1,0 +1,41 @@
+:host {
+  /* Component styles go here */
+  .select-container {
+    @include flexbox("column");
+    justify-content: center;
+    ion-button {
+      z-index: 1;
+      width: 64px;
+      height: 46px;
+      border-radius: 3px;
+      border: solid 1px #1c1c3b;
+      color: #1c1c3b;
+      ion-text {
+        font-size: 14px;
+        font-style: bold;
+      }
+      ion-icon {
+        font-size: 10px;
+      }
+    }
+    .lang-select {
+      z-index: 1000;
+      position: absolute;
+      margin-top: 60px;
+      opacity: 1;
+      background-color: #ffffff;
+      ion-list {
+        box-shadow: 0 2px 9px 0 rgba(0, 0, 0, 0.15);
+        width: 64px;
+        border-radius: 4px;
+        padding: 0 0;
+        ion-item {
+          --min-height: 35px;
+        }
+      }
+    }
+    .lang-select.hide {
+      visibility: hidden;
+    }
+  }
+}

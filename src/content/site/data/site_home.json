@@ -1,0 +1,92 @@
+{
+  "assets": {
+    "qrCodeImgUrl": "",
+    "questImgUrl": "site_home_quest.svg",
+    "challengesImgUrl": "site_home_challenges.svg",
+    "heroImgUrl": "site_home_hero.svg",
+    "habitsImgUrl": "advantages_habits.svg",
+    "domainsImgUrl": "advantages_domains.svg",
+    "progressImgUrl": "advantages_progress.svg",
+    "getZendareImgUrl": "img-get-app.svg",
+    "pwaImgUrl": "pwa_download.svg",
+    "appStoreImgUrl": "app_store.svg",
+    "playStoreImgUrl": "play_store.svg"
+  },
+  "translations": [{
+      "lang":"EN",
+      "labels": {
+        "startLabel": "Get started",
+        "knowMoreLabel": "Learn more",
+        "downloadLabel": "Download",
+        "availableLabel": "Now available",
+        "soonStoreLabel": "Coming Soon"
+      },
+      "sections": {
+        "hero": {
+          "title": "An enjoyable way to rediscover your lost wellbeing",
+          "subTitle": "Reboot your wellbeing the fun way by challenging yourself and your friends to complete the Zendare challenges"
+        },
+        "quest": {
+          "title": "Zendare's Quest",
+          "subTitle": "Simple and enjoyable challenges ",
+          "descriptionStart": "Unsure where to start when it comes to your wellbeing? There is no reason to panic!\n\n With the Zendare app, you will be guided step-by-step to achieve your goals.\n\nZendare simplifies the process of transitioning to a balanced and healthy lifestyle. We break down the journey into simple and engaging adventures and challenges.",
+          "descriptionTag": "A holistic approach to Wellbeing",
+          "descriptionEnd": "We help users to acquire good habits that lead to a more balanced physical, mental and social lifestyle that is sustainable and ecologically responsible.\n\nSince wellbeing is not limited to a single component, we focus on 7 key areas:",
+          "category_food_title": "Food",
+          "category_food_description": "Nutrition / Diet",
+          "category_move_title": "Move",
+          "category_move_description": "Physical exercise",
+          "category_purpose_title": "Purpose",
+          "category_purpose_description": "Personal fulfilment",
+          "category_stepback_title": "Step Back",
+          "category_stepback_description": "Meditation / Sleep / Mental Health",
+          "category_nature_title": "Nature",
+          "category_nature_description": "Connecting with Nature",
+          "category_lifestyle_title": "Lifestyle",
+          "category_lifestyle_description": "Beneficial Rituals",
+          "category_enjoy_title": "Enjoy",
+          "category_enjoy_description": "Creativity / Enjoyment"
+        },
+        "mission": {
+          "descriptionIntro": "Everything is connected, particularly when it comes to health. Our well-being is a result of a number of factors that impact our overall balance. What we eat, our sleep patterns, physical exercise, our stress and anxiety levels, they all impact the way our body and mind respond to sickness and to external factors. ",
+          "title": "Your lifestyle",
+          "subTitle": "Boost your immunity, reduce your stress and find balance",
+          "descriptionStart": "Zendare's mission is to help our users reach their optimal physical and mental health. This not only improves the user's quality of life, and therefore their level of fulfillment and happiness, but also their natural immunity and strength. ",
+          "descriptionEnd": "In a nutshell, Zendare helps people live a healthier, happier and more meaningful life."
+        },
+        "advantages": {
+          "title": "Advantages",
+          "subTitle": "Change your lifestyle whilst having fun\n",
+          "habits": {
+            "title": "Acquire new habits",
+            "subTitle": "Complete the challenges and learn new habits, the fun way."
+          },
+          "domains": {
+            "title": "7 dimensions of wellbeing",
+            "subTitle": "Wellbeing is both a journey and a lifestyle; and we've covered all aspects of what is needed."
+          },
+          "progress": {
+            "title": "Step-by-step",
+            "subTitle": "Increase the difficulty of the challenges at your own pace."
+          }
+        },
+        "challenges": {
+          "title": "Zendare's Journey",
+          "subTitle": "A holistic journey in the kingdom of wellbeing",
+          "descriptionIntro": "All Zendare challenges are designed by health and wellbeing experts",
+          "descriptionStart": "Zendare translates complex scientific data into simple and fun adventures and challenges. Zendare provides step-by-step guidelines on to learn better habits and develop a new way of living. You will also have access to all the explanations that you will need to understand the science behind the quests, the causality of your actions and their impact on your wellbeing.",
+          "descriptionEnd": "We chose to cover the multiple components of a healthy and balanced life, because wellbeing is the outcome of compounded actions that go hand-in-hand and which amplify the final result. "
+        },
+        "about_us": {
+          "title": "Behind the scene",
+          "subTitle": "We are a knowledgeable, passionate and multidisciplinary team",
+          "descriptionStart": "Zendare is developed by a team of entrepreneurs and qualified health and wellbeing professionals, who are all connected by a common passion to help both people and the planet. This passion brought the Zendare team together to support people to live a healthier, more balanced and more meaningful life. This is made possible through the Zendare app experience."
+        }
+      },
+      "getZendare": {
+        "title": "The Application",
+        "subTitle": "Try zendare for free",
+        "availableLabel": "Available now"
+      }
+  }]
+}

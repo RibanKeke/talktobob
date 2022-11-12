@@ -1,0 +1,33 @@
+{
+  "name": "sw",
+  "private": true,
+  "version": "1.0.0",
+  "description": "ServiceWorker",
+  "main": "service-worker.ts",
+  "scripts": {
+    "sw-build-dev": "rollup --config --configDev",
+    "sw-build": "export NODE_ENV=production  && rollup --config"
+  },
+  "author": "",
+  "license": "Robert Banziziki Muhire",
+  "dependencies": {
+    "tslib": "^2.0.3",
+    "workbox-core": "^6.0.2",
+    "workbox-precaching": "^6.0.2",
+    "workbox-routing": "^6.0.2",
+    "workbox-strategies": "^6.0.2",
+    "workbox-background-sync": "^6.0.2"
+  },
+  "devDependencies": {
+    "@rollup/plugin-json": "^4.1.0",
+    "@rollup/plugin-node-resolve": "^10.0.0",
+    "@rollup/plugin-strip": "^2.0.0",
+    "@types/object-hash": "^1.3.4",
+    "rollup": "^2.35.1",
+    "rollup-plugin-node-polyfills": "^0.2.1",
+    "rollup-plugin-terser": "^7.0.2",
+    "rollup-plugin-typescript": "^1.0.1",
+    "typescript": "^4.1.3",
+    "workbox-build": "^6.0.2"
+  }
+}

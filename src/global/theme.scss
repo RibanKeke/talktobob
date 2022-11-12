@@ -1,0 +1,240 @@
+/*
+Author: Robert Banziziki Muhire
+Date: 11/02/2020
+Usage: This file is used to create global theming for ionic-components using mixins, with the ability to override the theming where used.
+To be customized on a project basis
+*/
+
+/*
+POPOVER
+*/
+
+ion-popover {
+  --backdrop-opacity: 0.7;
+  padding-left: 12px;
+  padding-right: 12px;
+}
+
+.tutorial-popover::part(content) {
+  width: 80%;
+  border-radius: 10px;
+}
+
+/*
+MODAL
+*/
+
+ion-modal.modal-default:not(.overlay-hidden)~ion-modal.modal-default {
+  --backdrop-opacity: 0.7;
+}
+
+.event-modal {
+  display: flex;
+  align-items: flex-end;
+  --height: 80%;
+  --width: 100%;
+  --border-radius: 10px 10px 0 0;
+}
+
+ion-datetime {
+  width: 100%;
+  max-width: 100%;
+  --background: var(--ion-color-primary-contrast);
+  --background-rgb: var(--ion-color-primary-contrast);
+}
+
+ion-modal.date-time-modal,
+ion-toolbar ion-buttons ion-button {
+  font-size: 17px;
+  --backdrop-opacity: 0.7;
+}
+
+.date-time-modal {
+  --border-radius: 10px 10px 0 0;
+}
+
+.date-time-modal::part(content) {
+  // height: 100%;
+  max-height: 410px;
+  position: absolute;
+  bottom: 0;
+}
+
+.date-time-modal.time-view::part(content) {
+  // height: 100%;
+  // max-height: 250px;
+  position: absolute;
+  bottom: 0;
+}
+
+.full-modal {
+  --height: 100%;
+  --width: 100%;
+  --border-radius: 0;
+  --backdrop-opacity: 0;
+}
+
+.notify-progress-modal {
+  --height: 36%;
+  --width: 92%;
+  --border-radius: 8px;
+  --backdrop-opacity: 0.7;
+}
+
+.install-modal {
+  position: absolute;
+  bottom: 0;
+  --height: 36%;
+  --width: 100%;
+  --border-radius: 13px 13px 0 0;
+  --backdrop-opacity: 0.7;
+}
+
+.install-banner {
+  position: absolute;
+  bottom: 0;
+}
+
+/*
+ALERT
+*/
+
+ion-alert.select-alert,
+.alert-button-group,
+button.alert-button {
+  font-family: var(--ion-font-family);
+  font-size: 17px;
+  font-weight: 400;
+}
+
+button.alert-button.alert-button-inner {
+  font-family: var(--ion-font-family);
+  font-size: 17px;
+  font-weight: 700;
+}
+
+/* 
+PICKER
+*/
+
+.picker-columns,
+.picker-toolbar,
+.picker-md .picker-ios .picker-wrapper,
+.picker-md .picker-ios .picker-toolbar,
+.picker-md .picker-ios .picker-prefix,
+.picker-md .picker-ios .picker-suffix,
+.picker-md .picker-ios .picker-opt.picker-opt-selected,
+.picker-md .picker-ios .picker-opt,
+.picker-md .picker-ios .picker-button {
+  font-family: var(--ion-font-family);
+  font-size: 17px;
+}
+
+/* This has an effect on primary buttons, to fix */
+.picker-md .picker-ios .picker-button.activated {
+  font-family: var(--ion-font-family);
+  font-weight: 700;
+}
+
+/* 
+BUTTON 
+*/
+
+.mf-btn-primary {
+  font-family: var(--ion-font-family);
+  font-size: 16px;
+  font-weight: 700;
+  height: 48px;
+  width: 280px;
+  text-transform: inherit;
+  --background: var(--ion-color-primary);
+  --background-hover: none;
+  --border-color: none;
+  --border-radius: 10px;
+  --border-style: none;
+  --border-width: none;
+  --box-shadow: 0 3px 0 0 var(--ion-color-primary-dark);
+  --color: var(--ion-color-primary-contrast);
+  --color-activated: var(--ion-color-primary-contrast);
+  --opacity: 1;
+  --padding-bottom: 0;
+  --padding-end: 0;
+  --padding-start: 0;
+  --padding-top: 0;
+}
+
+.mf-btn-secondary {
+  font-family: var(--ion-font-family);
+  font-size: 16px;
+  font-weight: 700;
+  --ripple-color: transparent;
+  --color: var(--ion-color-primary);
+  text-transform: inherit;
+  --transition: 0.2s;
+}
+
+.mf-btn-tertiary {
+  font-family: var(--ion-font-family);
+  font-size: 16px;
+  font-weight: 700;
+  height: 48px;
+  width: 280px;
+  text-transform: inherit;
+  --background: transparent;
+  --background-hover: none;
+  --border-color: var(--ion-color-primary);
+  --border-radius: 10px;
+  --border-style: solid;
+  --border-width: 1px;
+  --box-shadow: 0 3px 0 0 var(--ion-color-light);
+  --color: var(--ion-color-primary);
+  --color-activated: var(--ion-color-primary-contrast);
+  --background-activated: rgba(100, 91, 212, 0.3);
+  --transition: 0.2s;
+}
+
+/* 
+WEBSITE
+*/
+
+.mf-site-container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 16px;
+
+  /* Container for tablets */
+  @include alt-tablet {
+    padding: 0 24px;
+  }
+}
+
+/* 
+iOS ONLY
+*/
+
+.ios {
+  .mf-btn-secondary {
+    font-family: var(--ion-font-family);
+    --background: transparent;
+    --background-activated: transparent;
+    --background-hover: none;
+    --box-shadow: none;
+    --ripple-color: transparent;
+  }
+
+  .mf-btn-tertiary {
+    font-family: var(--ion-font-family);
+    --background-hover: none;
+    --ripple-color: transparent;
+    --background: transparent;
+    --background-activated: rgba(100, 91, 212, 0.3);
+  }
+
+  /* 
+iOS Toolbar
+*/
+
+  ion-toolbar {
+    --background: var(--ion-color-primary-contrast);
+  }
+}

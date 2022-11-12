@@ -1,0 +1,45 @@
+:host {
+  /* Component styles go here */
+
+  .main-container {
+    /* Tablets */
+    @include alt-tablet {
+    max-width: 60%;
+    }
+
+    h2.newsletter-title {
+      font-size: 18px;
+      font-weight: 600;
+      margin: 0 0 16px;
+      color: var(--ion-color-secondary-shade);
+    }
+
+    .input-container {
+      @include flexbox();
+      border: solid 1px var(--ion-color-light-tint);
+      border-radius: 4px;
+
+      .input-style {
+        --placeholder-color: var(--ion-color-light);
+      }
+
+      ion-button.btn-send {
+        --box-shadow: transparent;
+        width: 56px;
+        margin: 0;
+        --border-radius: 0 3px 3px 0;
+        --background: var(--zen-color-primary-light);
+        --color: var(--ion-color-primary);
+        --color-activated: var(--ion-color-secondary);
+      }
+    }
+
+    p.captions {
+      margin: 4px 0 0;
+      font-size: 12px;
+      font-weight: 400;
+      color: var(--ion-color-medium-tint);
+      line-height: 24px;
+    }
+  }
+}

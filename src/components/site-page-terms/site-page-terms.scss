@@ -1,0 +1,45 @@
+:host {
+
+  /* Component styles go here */
+  ion-content {
+    .terms-container {
+      padding: 20px 0 64px;
+
+      /* Desktop */
+      @include desktop() {
+        padding: 64px 0 128px;
+      }
+
+      h2 {
+        margin: 0;
+        font-size: 24px;
+        font-weight: 700;
+        color: var(--ion-color-secondary);
+      }
+
+      h3 {
+        font-size: 21px;
+        font-weight: 700;
+        color: var(--ion-color-secondary);
+      }
+
+      ul {
+        li {
+          font-size: 20px;
+          font-weight: 400;
+          a {
+            font-size: 20px;
+            font-weight: 400;
+          }
+        }
+      }
+
+      p {
+        margin: 12px 0 12px;
+        font-size: 20px;
+        font-weight: 400;
+        color: var(--ion-color-medium-shade);
+      }
+    }
+  }
+}

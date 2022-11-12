@@ -1,0 +1,25 @@
+:host {
+  /* Component styles go here */
+
+  .main-container {
+    padding: 0 0 40px;
+
+    h1.social-title {
+      font-size: 18px;
+      font-weight: 600;
+      color: var(--ion-color-light);
+      margin: 0 0 12px;
+    }
+
+    .links-container {
+      @include flexbox();
+      justify-content: flex-start;
+
+      ion-icon.link {
+        padding-right: 16px;
+        font-size: 1.5rem;
+        color: var(--ion-color-light);
+      }
+    }
+  }
+}

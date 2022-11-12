@@ -1,0 +1,55 @@
+{
+  "translations": [
+    {
+      "lang": "EN",
+      "categoriesTitle": "Categories",
+      "categories": {
+        "all":{
+            "title": "Zendare Blog",
+            "text":"Let's get better together",
+            "label":"All"
+        },
+        "food": {
+            "title": "Food",
+            "text":"Learn what and when to eat",
+            "label": "Food"
+        },
+        "nature": {
+            "title": "Nature",
+            "text":"Make time to commune with nature",
+            "label": "Nature"
+        },
+        "move": {
+            "title": "Move",
+            "text":"Feel good in your own body",
+            "label": "Move"
+        },
+        "enjoy": {
+            "title": "Enjoy",
+            "text":"Bring the fun back in your daily life",
+            "label": "Enjoy"
+        },
+        "lifestyle": {
+            "title": "Lifestyle",
+            "text":"Find your ideal healthy lifestyle",
+            "label": "Lifestyle"
+        },
+        "purpose": {
+            "title": "Purpose",
+            "text":"Self love is also about giving",
+            "label": "Purpose"
+        },
+        "stepback": {
+            "title": "Step back",
+            "text":"Give yourself some time to recover",
+            "label": "Step back"
+        }
+      },
+      "followLabel":"Follow us",
+      "newsletterLabels": {
+        "title": "Subscribe to our newsletter",
+        "text": "We'll never share your email address with a third-party."
+      }
+    }
+  ]
+}

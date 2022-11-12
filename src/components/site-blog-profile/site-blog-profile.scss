@@ -1,0 +1,40 @@
+:host {
+    /* Component styles go here */
+    
+    .site-blog-profile {
+      @include flexbox();
+      align-items: center;
+    
+      ion-avatar.writer-img-container {
+        height: 52px;
+        width: 52px;
+        --border-radius: 2rem;
+        margin: 0;
+    
+        .writer-img {
+          background-repeat: no-repeat;
+          background-size: 100%;
+          background-position: center;
+        }
+      }
+    
+      .details-container {
+        padding-left: 12px;
+    
+        .writer-name {
+          margin: 0;
+          font-size: 14px;
+          font-weight: 600;
+          color: var(--ion-color-secondary-shade);
+        }
+    
+        .writer-profession {
+          margin: 2px 0 0;
+          font-size: 14px;
+          color: var(--ion-color-tertiary-tint);
+          font-weight: 400;
+        }
+      }
+    }
+   }
+   

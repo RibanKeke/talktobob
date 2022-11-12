@@ -1,0 +1,38 @@
+:host {
+  /* Component styles go here */
+  .main-container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr minmax(calc(#{$sm-width}/ 2), #{$xl-width}) 1fr;
+    grid-template-rows: 1fr;
+
+    .left-section-container {
+      position: relative;
+      grid-column: 2;
+      grid-row: 1;
+
+      /* Desktop */
+      @include alt-xl() {
+        grid-column: 1;
+      }
+    }
+
+    .right-section-container {
+      position: relative;
+      grid-column: 2;
+      grid-row: 1;
+
+      /* Desktop */
+      @include alt-xl {
+        grid-column: 3;
+      }
+    }
+    .section-container {
+      position: relative;
+      padding: 0 1rem;
+      max-width: #{$xl-width};
+      grid-column: 2;
+      grid-row: 1;
+    }
+  }
+}

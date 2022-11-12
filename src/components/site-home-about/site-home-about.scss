@@ -1,0 +1,107 @@
+:host {
+  .about-container {
+    @include flexbox(column);
+    padding: 64px 0;
+    background-repeat: no-repeat;
+    background-size: 400%;
+
+    /*For support all browsers with Safari browser*/
+    background-position-x: right;
+    background-position-y: center;
+
+    .about-content {
+      max-width: 50rem;
+      margin: 0 auto 0;
+      z-index: 2;
+      text-align: center;
+
+      .about-title {
+        margin: 0 0 8px;
+        text-transform: uppercase;
+        font-size: 18px;
+        font-weight: 900;
+        color: var(--ion-color-primary);
+        opacity: 0.74;
+      }
+
+      .about-subtitle {
+        margin: 0 0 24px;
+        font-size: 2.25rem;
+        font-weight: 700;
+        color: var(--ion-color-secondary);
+      }
+
+      .about-description {
+        font-size: 20px;
+        line-height: 32px;
+        color: var(--ion-color-medium);
+      }
+    }
+
+    /* Desktop */
+    @include desktop {
+      padding: 100px 0;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 94%;
+
+      /*For support all browsers with Safari browser*/
+      background-position-x: center;
+      background-position-y: center;
+
+      .about-content {
+        .about-subtitle {
+          font-size: 46px;
+          margin: 0 0 40px;
+        }
+
+        .about-description {
+          padding: 0 100px;
+          font-size: 20px;
+        }
+      }
+    }
+
+    /* Laptop */
+    @include alt-laptop {
+      padding: 100px 0;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: 94%;
+
+      /*For support all browsers with Safari browser*/
+      background-position-x: center;
+      background-position-y: center;
+
+      .about-content {
+        .about-subtitle {
+          font-size: 46px;
+          margin: 0 0 40px;
+        }
+
+        .about-description {
+          padding: 0 24px;
+          font-size: 20px;
+        }
+      }
+    }
+
+    /* Tablet */
+    @include alt-tablet {
+      padding: 64px 40px;
+      background-size: 100%;
+
+      .about-content {
+        .about-subtitle {
+          font-size: 40px;
+        }
+
+        .about-description {
+          padding: 0;
+          font-size: 22px;
+          line-height: 36px;
+        }
+      }
+    }
+  }
+}

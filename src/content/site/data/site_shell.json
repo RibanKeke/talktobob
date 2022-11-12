@@ -1,0 +1,40 @@
+{
+  "footerLinks": {
+    "facebook_url": "https://www.facebook.com/ZendareApp/",
+    "linkedin_url": "https://www.linkedin.com/company/zendare",
+    "youtube_url": "https://www.youtube.com/channel/UCE7sbKuwA1Co-yh6H40EPfg",
+    "instagram_url": "https://www.instagram.com/zendare_app/",
+    "twitter_url": "https://twitter.com/zendareapp"
+  },
+  "email": "contact@zendare.app",
+  "translations": [
+    {
+      "lang": "EN",
+      "iphone_label": "iPhone App",
+      "android_label": "Android App",
+      "blog_label": "Blog",
+      "company_label": "Company",
+      "application_label": "The app",
+      "donation_label": "Support Us",
+      "language_labels": {
+        "FR": "FR",
+        "EN": "EN",
+        "NL": "NL"
+      },
+      "email_label": "Get in touch",
+      "email_subject": "Hi, Zendare-team",
+      "general_conditions_label": "Terms and conditions",
+      "cookie_policy_label": "Privacy policy",
+      "copyright_label": "© Zendare 2022 All rights reserved.",
+      "cookieLabels": {
+        "title": "cookie policy.",
+        "btnLabel": "Accept",
+        "text": "We use cookies to give you the best experience possible. By continuing on the website we'll assume you understand and agree with their use according to our ",
+        "moreInfoLabel": "More information"
+      },
+      "newsletter_title": "Subscribe to our newsletter",
+      "newsletter_subtitle": "We'll never share your email address with a third-party.",
+      "newsletter_input_placeholder": "Type your email here"
+    }
+  ]
+}

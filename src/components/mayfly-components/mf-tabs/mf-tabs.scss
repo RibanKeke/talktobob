@@ -1,0 +1,22 @@
+mf-tabs {
+  ion-tab-bar.tab-container {
+    --background: var(--ion-color-primary-contrast);
+    box-shadow: 0 -2px 0 0 var(--ion-color-light-tint);
+
+    .buttons {
+      --color: var(--ion-color-medium-tint);
+      --color-selected: var(--ion-color-primary);
+      --ionicon-stroke-width: 38px;
+
+      .tab-button-label {
+        font-size: 13px;
+        font-weight: 600;
+      }
+    }
+  }
+
+  /* iOS only */
+  .ios.tab-button-icon {
+    font-size: 24px;
+  }
+}

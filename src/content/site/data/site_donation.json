@@ -1,0 +1,13 @@
+{
+  "translations": [
+    {
+      "lang": "EN",
+      "supportTitle": "Support Zendare",
+      "supportText": "Help us build a healthier lifestyle",
+      "donationTitle": "A message from Zendare team",
+      "donationMessage": "Today we are proud to have released the beta version of the mobile application. However, the goal is to release the 1st official version of the app in early 2022. This is why we are asking your support to help us build a healthier lifestyle. Thank you in advance for your contribution, your donation will go towards:\n Stabilising the beta version\n Adding new features\n releasing an upgraded official version 1 of the app We really want to make a change and this is why we need you. A big thank you The Zendare team",
+      "donationText": "By donating, you can help us improve the Zendare app. \n A little help goes a long way.",
+      "donationBtnLabel": "Donate now"
+    }
+  ]
+}

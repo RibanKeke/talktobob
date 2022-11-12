@@ -1,0 +1,249 @@
+:host {
+
+  /* Component styles go here */
+  ion-toolbar.footer-container {
+    --padding-top: 40px;
+    --padding-bottom: 24px;
+    --border-style: solid;
+    --background: var(--zen-color-primary-light-tint);
+    border-top: solid 2px var(--ion-color-light-tint);
+
+    /* Desktop */
+    @include desktop {
+      --padding-top: 80px;
+    }
+
+    .footer-content {
+      .footer-nav {
+
+        /* Desktop */
+        @include desktop {
+          @include flexbox();
+          justify-content: space-between;
+        }
+
+        .icon-links {
+          @include flexbox(column);
+          align-items: center;
+
+          /* Desktop */
+          @include desktop {
+            align-items: flex-start;
+
+          }
+
+          .zendare-icon {
+            width: 7rem;
+          }
+
+          .social-links {
+            padding: 40px 0 16px;
+
+            .link {
+              padding: 0 16px;
+              font-size: 1.5rem;
+              color: var(--ion-color-medium);
+            }
+
+            /* Desktop */
+            @include desktop {
+              .link.ic-facebook {
+                padding-left: 0;
+              }
+            }
+
+            .link:hover {
+              color: var(--ion-color-primary);
+              transition: ease-in 0.2s;
+            }
+          }
+
+          .newsletter-container {
+            margin: 20px 0 16px;
+
+            /* Tablets */
+            @include alt-tablet {
+              max-width: 60%;
+            }
+
+            h4.title {
+              margin: 0 0 12px;
+              font-size: 16px;
+              font-weight: 600;
+              color: var(--ion-color-medium);
+              text-align: center;
+
+              /* Desktop */
+              @include desktop {
+                text-align: left;
+              }
+
+              /* Laptop */
+              @include alt-laptop {
+                text-align: left;
+              }
+            }
+
+            .input-container {
+              @include flexbox();
+              border: solid 1px var(--ion-color-light-tint);
+              border-radius: 4px;
+
+              .input-style {
+                --placeholder-color: var(--ion-color-medium-tint);
+              }
+
+              ion-button.btn-send {
+                --box-shadow: transparent;
+                width: 56px;
+                margin: 0;
+                --border-radius: 0 3px 3px 0;
+                --background: var(--zen-color-primary-light);
+                --color: var(--ion-color-primary);
+                --color-activated: var(--ion-color-secondary);
+              }
+            }
+
+            p.captions {
+              margin: 4px 0 0;
+              font-size: 12px;
+              font-weight: 400;
+              color: var(--ion-color-medium-tint);
+              line-height: 24px;
+            }
+          }
+        }
+
+        .nav-section {
+          @include flexbox(column);
+          text-align: center;
+
+          /* Laptop */
+          @include alt-laptop {
+            text-align: left;
+          }
+
+          /* Desktop */
+          @include desktop {
+            text-align: left;
+          }
+
+          h3.section-title {
+            padding: 1.5rem 0 0;
+            font-size: 16px;
+            font-weight: 700;
+            color: var(--ion-color-secondary-shade);
+
+            /* Desktop */
+            @include desktop {
+              padding: 0 0 16px;
+              margin: 0;
+            }
+          }
+
+          .route-link {
+            cursor: pointer;
+            padding: 0.5rem 0 12px;
+            font-size: 16px;
+            font-weight: 400;
+            color: var(--ion-color-secondary-shade);
+            transition: ease-in 0.2s;
+
+            /* Desktop */
+            @include desktop {
+              padding: 0.5rem 0;
+            }
+          }
+
+          .route-link:hover {
+            color: var(--ion-color-primary);
+          }
+        }
+      }
+
+      .legal {
+        margin: 40px 0 0;
+        font-size: 14px;
+        text-align: center;
+
+        .terms-and-policy {
+          @include flexbox(column);
+          margin: 40px 0 40px;
+
+          .terms {
+            color: var(--ion-color-secondary);
+            transition: ease-in 0.2s;
+
+          }
+
+          .terms:hover {
+            color: var(--ion-color-primary);
+          }
+
+          .policy {
+            padding-top: 12px;
+            color: var(--ion-color-secondary);
+            transition: ease-in 0.2s;
+
+          }
+
+          .policy:hover {
+            color: var(--ion-color-primary);
+          }
+        }
+
+        .copyright {
+          color: var(--ion-color-secondary);
+        }
+
+        /* Laptop */
+        @include alt-laptop {
+          @include flexbox(row);
+          justify-content: space-between;
+          text-align: left;
+
+          .terms-and-policy {
+            @include flexbox(row);
+            align-items: flex-end;
+            order: 2;
+            margin: 0;
+
+            .policy {
+              padding: 0 0 0 24px;
+
+            }
+          }
+
+          .copyright {
+            padding: 0;
+            order: 1;
+          }
+        }
+
+        /* Desktop */
+        @include desktop {
+          @include flexbox(row);
+          justify-content: space-between;
+          text-align: left;
+
+          .terms-and-policy {
+            @include flexbox(row);
+            align-items: flex-end;
+            order: 2;
+            margin: 0;
+
+            .policy {
+              padding: 0 0 0 24px;
+
+            }
+          }
+
+          .copyright {
+            padding: 0;
+            order: 1;
+          }
+        }
+      }
+    }
+  }
+}
